@@ -3,30 +3,24 @@
  * License - https://github.com/bebagodfried/minireset.scss/blob/main/LICENSE 
  * (c) 2022.
  */
- 
+
 //** Document */
 *,
-::before, ::after {
-     box-sizing: border-box; //=> Ajust `box-sizing` styles
+::before,::after {
+  box-sizing: border-box;
 }
 
-::before, ::after {
-     content: '';
-}
-
-:root
-{
-     scroll-behavior: smooth; //=> Ajust box scrolls in smooth fashion
+:root {
+  scroll-behavior: smooth;
 }
 
 [hidden] {
-     display: none !important; //=> Always hide an element with the `hidden` attribute
+  display: none !important; //=> Always hide an element with the `hidden` attribute
 }
 
 //** Body */
-body
-{
-     line-height: 1;
+body {
+  line-height: 1;
 }
 
 //** Elements */
@@ -110,18 +104,19 @@ summary,
 time,
 mark,
 audio,
-video
-{
-     // Ajust elements spacing
-     margin: 0;
-	padding: 0;
+video {
+  // Ajust elements spacing
+  margin: 0;
+  padding: 0;
 
-	border: 0;
-     // Ajust elements fonts
-	font-size: 100%;
-     font-weight: normal;
+  border: 0;
+  
+  font: {
+    size: 100%;
+    weight: normal;
+  }
 
-	vertical-align: baseline;
+  vertical-align: baseline;
 }
 
 //** Blocks */
@@ -135,69 +130,59 @@ header,
 hgroup,
 menu,
 nav,
-section
-{
-     display: block;
+section {
+  display: block;
 }
 
 //** Lists */
-ul
-{
-     list-style: none;
+ul {
+  list-style: none;
 }
 
 //** Forms */
-button
-{
-     border-radius: 0; //=> Remove the default `border-radius`
+button {
+  border-radius: 0; //=> Remove the default `border-radius`
 }
 
 button,
 input,
-select
-{
-     margin: 0;
+select {
+  margin: 0;
 }
 
 button,
 fieldset,
-input
-{
-     outline: 0; //=> Reset the default outline behavior
+input {
+  outline: 0; //=> Reset the default outline behavior
 }
 
-label
-{
-     display: inline-block;
+label {
+  display: inline-block;
 }
 
 textarea {
-     resize: vertical; //=> Avoid horizontal break containers
+  resize: vertical; //=> Avoid horizontal break containers
 }
 
 //** images & videos */
 img,
-video
-{
-     height: auto;
-     max-width: 100%;
+video {
+  height: auto;
+  max-width: 100%; //=> images & videos container-fluid
 }
 
 //** Frame */
-iframe
-{
-     border: 0; //=> Remove border from iframe
+iframe {
+  border: 0; //=> Remove border from iframe
 }
 
 //** Table */
-table
-{
-     border-collapse: collapse;
-     border-spacing: 0;
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 th,
-td
-{
-     padding: 0;
+td {
+  padding: 0;
 }

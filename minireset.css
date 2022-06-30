@@ -3,14 +3,9 @@
  * License - https://github.com/bebagodfried/minireset.scss/blob/main/LICENSE 
  * (c) 2022.
  */
-
 *,
 ::before, ::after {
   box-sizing: border-box;
-}
-
-::before, ::after {
-  content: "";
 }
 
 :root {
