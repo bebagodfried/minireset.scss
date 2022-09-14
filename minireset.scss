@@ -1,7 +1,6 @@
 /*!
  * minireset.scss 1.0.0 by @bebagodfried - https://github.com/bebagodfried/minireset.scss
- * License - https://github.com/bebagodfried/minireset.scss/blob/main/LICENSE 
- * (c) 2022.
+ * License: MIT (c) 2022.
  */
 
 //** Document */
@@ -108,15 +107,13 @@ video {
   // Ajust elements spacing
   margin: 0;
   padding: 0;
-
   border: 0;
-  
+  vertical-align: baseline;
+
   font: {
     size: 100%;
     weight: normal;
   }
-
-  vertical-align: baseline;
 }
 
 //** Blocks */
